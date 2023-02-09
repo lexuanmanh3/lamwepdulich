@@ -1,0 +1,298 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0px;
+    margin: 0px;
+}
+
+.row {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background: rgb(255, 255, 255);
+    border-bottom: solid 1px #e9ccc2;
+}
+
+.boxcenter {
+    margin: 0 auto;
+    width: 1324px;
+    height: auto;
+
+}
+.mh {
+    min-height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .sub-menu,
+.sub-menu-con {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>.sub-menu>li {
+    padding: 20px 18px;
+    position: relative;
+}
+
+.menu .sub-menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: #2b2525;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu .sub-menu .sub-menu-con {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 62px;
+    list-style: none;
+    width: 180px;
+    display: none;
+    left: 5px;
+    border: #e9e9e9;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 54%), 0 13px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.menu .sub-menu li:hover>a {
+    /* color: #337ab7; */
+}
+
+.menu>ul.sub-menu li:hover ul {
+    display: block;
+
+}
+
+.menu>ul.sub-menu>li>a::after {
+    content: "";
+    background-color: #23527c;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 18px;
+    border-radius: 25px;
+    text-align: center  ;
+}
+
+.menu>ul.sub-menu>li:hover a::after {
+    width: calc(100% - 36px);
+    transition: all 0.5s;
+}
+
+.menu .sub-menu .sub-menu ul {
+    width: 180px;
+}
+
+.menu .sub-menu .sub-menu-con li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e9e9e9;
+    display: block;
+    font-weight: 500;
+}
+
+.menu .sub-menu .sub-menu-con li:hover a {
+    border-bottom: 1px solid #8b8b8b;
+    /* color: #337ab7; */
+}
+
+.menu .sub-menu .sub-menu ul {
+    width: 180px;
+}
+
+.menu .sub-menu .sub-menu li {
+    position: relative;
+    margin: 0;
+}
+
+.menu .sub-menu .sub-menu>ul:hover li {
+    border-bottom: 1px solid #5f5e5e;
+}
+
+.menu .sub-menu .sub-menu li:last-child {
+    border: none;
+}
+
+.sub-menu-right {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.sub-menu-right p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.sub-menu-right p:last-child {
+    color: #ffc600;
+    font-weight: bold;
+    margin-top: 00px;
+}
+
+
+.menu .logo a {
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #90bc16;
+    text-shadow: 1px 1px 6px black;
+}
+
+.menu .logo a:last-child {
+    color: black;
+}
+
+.call {
+    font-size: 25px;
+    transform: rotate(-16deg);
+    line-height: 2.5;
+    color: #585a53;
+    margin-right: -90px;
+}
+.banner img {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+}
+
+
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    bottom: -62px;
+}
+
+.box1 .timkiem{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    /* background-color:rgba(9, 132, 227,0.5); */
+    top: calc(50% - 50px);
+    left: calc(50% - 250px);
+    border-radius: 5px;
+}
+
+.box1 .timkiem h2{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f7e000;
+    padding: 5px;
+}
+.box1 .timkiem input{
+    width: 480px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.box1 .timkiem .input{
+    text-align: center;
+}
+
+.box1 .timkiem button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 40px;
+    background-color: #90bc16;
+    border: 1px solid wheat;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.box2{
+    margin-top: 80px;
+}
+.box2 .box2-subtop{
+    text-align: center;
+}
+
+.box2 .box2-subtop h1{
+    color: #f14c00;
+}
+.box2 .box2-submid ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.box2 .box2-submid ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #5a5757;
+}
+.box2-subbottom{
+    display: flex;
+    margin-top: 40px;
+}
+.box2-subbottom-1{
+    width: 50%;
+    height: auto;
+}
+.box2-subbottom-1 a img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;  
+}
+.box2-subbottom-1 a{
+    text-decoration: none;
+    color: #2e5a8a;
+}
+.box2-subbottom-1 p{
+    color: #8b8b8b;
+}
+.box2-subbottom-1 a:hover{
+    color: #5a50e4;
+}
+.box2-subbottom-2{
+    width: calc(50% - 20px);
+    height: auto;
+}
+.box2-subbottom-2 ul{
+    margin: 0;
+}
+.box2-subbottom-2 ul li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+.box2-subbottom-2-img{
+    width: 300px;
+}
+.box2-subbottom-2-img img{
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.box2-subbottom-2-content{
+    margin-left: 20px;
+}
+.box2-subbottom-2-content p:first-child{
+    margin: 0;
+    font-size: 15px;
+    color: #f14c00;
+}
+.box2-subbottom-2-content a{
+        text-decoration: none;
+        font-size: 20px;
+        color:#2e5a8a;
+        font-weight: 400;
+}
+.box2-subbottom-2-content p{
+    color: #8b8b8b;
+}
+
+

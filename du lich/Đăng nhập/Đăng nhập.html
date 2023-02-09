@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        background-color: #f0f2f5;
+    }
+    .body{
+        
+    }
+
+    .boxcenter{
+        margin: 0 auto;
+        width: 400px;
+        min-height: 100px;
+        text-align: center;
+        background-color:#f0f2f5 ;
+    }
+    .logo a {
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #90bc16;
+    text-shadow: 1px 1px 6px black; 
+}
+.logo{
+    padding: 20px;
+}
+.logo a:last-child {
+    color: black;
+}
+    .boxdangnhap_sub{
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        border: 1px solid #dddfe2;
+        display: block;
+        text-align: center;
+    }
+   
+    .tendangnhap ,.matkhau{
+        display: flex;
+        padding: 10px;
+        background: white;
+        
+        
+    }
+
+    input[type=text]{
+        padding: 14px 13px;
+    background: none;
+    border: 1px solid #dddfe2;
+    box-shadow: none;
+    float: left;
+    font-size: 17px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    border-radius: 8px;
+    }
+    button{
+        padding: 14px 13px;
+    background: none;
+    border: 1px solid #dddfe2;
+    box-shadow: none;
+    float: left;
+    font-size: 17px;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #1877f2;
+    }
+    button.btntaotk{
+        padding: 14px 1px;
+    background: none;
+    border: 1px solid #dddfe2;
+    box-shadow: none;
+    float: left;
+    font-size: 17px;
+    width: 178px;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #42b72a;
+    font-weight: bold;
+    }
+    .btndangnhap ,.btntaotk , .quentk,.sphoac{
+        display: flex;
+        justify-content: center;
+        background: white;
+        
+    }
+    .quentk{
+    margin: 0 auto;
+    width: 300px   ;
+    }
+    .quentk a{
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1877f2;
+        font-weight: 500;
+        background: white;
+    }
+    .quentk a:hover{
+        text-decoration: underline;
+    }
+    .sphoac{
+        margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    overflow: hidden;
+    background: white;   
+    }
+    span{
+        position: relative;
+    }
+
+    span::after{
+        background: #ccd0d5;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 999px;
+    margin-left: 15px;
+    }
+    span::before{
+    background: #ccd0d5;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 999px;
+    left: -1014px;
+    margin-right: 10px;
+    }
+
+
+    .btntaotk{
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="boxdangnhap boxcenter">
+            <div class="logo">
+            <a style="text-align: center;" href="">MH</a>
+            <a style="text-align: center;" href="">  TOUR</a>
+            </div>
+            <div class="boxdangnhap_sub">
+                <h2 style="text-align: center;background: white; font-family: Arial, Helvetica, sans-serif;margin: 10px; color: #464f5b;">Đăng nhập</h1>
+                <div class="tendangnhap">
+                    <input placeholder="Email hoặc số điện thoại" type="text">
+                </div>
+                <div class="matkhau">
+                    <input  placeholder="Mật khẩu" type="text">
+                </div>
+                <div class="btndangnhap"><button>Đăng nhập</button></div>
+                <div class="quentk"><a href="">Quên tài khoản</a></div>
+                <div class="sphoac"><span>Hoặc</span></div>
+                
+                <div class="btntaotk"><button class="btntaotk">Tạo tài khoản mới</button></div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
